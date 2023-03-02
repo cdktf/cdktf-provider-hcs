@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_con
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 datahcsagenthelmconfig.NewDataHcsAgentHelmConfig(scope Construct, id *string, config DataHcsAgentHelmConfigConfig) DataHcsAgentHelmConfig
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 datahcsagenthelmconfig.DataHcsAgentHelmConfig_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 datahcsagenthelmconfig.DataHcsAgentHelmConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ datahcsagenthelmconfig.DataHcsAgentHelmConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 datahcsagenthelmconfig.DataHcsAgentHelmConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 &datahcsagenthelmconfig.DataHcsAgentHelmConfigConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
 	AksResourceGroup: *string,
 	ExposeGossipPorts: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v3.dataHcsAgentHelmConfig.DataHcsAgentHelmConfigTimeouts,
 }
 ```
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 &datahcsagenthelmconfig.DataHcsAgentHelmConfigTimeouts {
 	Default: *string,
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig.DataHcsAgentHelmConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v3/datahcsagenthelmconfig"
 
 datahcsagenthelmconfig.NewDataHcsAgentHelmConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsAgentHelmConfigTimeoutsOutputReference
 ```
