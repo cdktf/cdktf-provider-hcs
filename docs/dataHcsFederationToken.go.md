@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/hcs/d/federation_tok
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.NewDataHcsFederationToken(scope Construct, id *string, config DataHcsFederationTokenConfig) DataHcsFederationToken
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ datahcsfederationtoken.DataHcsFederationToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 &datahcsfederationtoken.DataHcsFederationTokenConfig {
 	Connection: interface{},
@@ -628,7 +628,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
 	ManagedApplicationName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v4.dataHcsFederationToken.DataHcsFederationTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs.dataHcsFederationToken.DataHcsFederationTokenTimeouts,
 }
 ```
 
@@ -782,7 +782,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 &datahcsfederationtoken.DataHcsFederationTokenTimeouts {
 	Default: *string,
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.NewDataHcsFederationTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsFederationTokenTimeoutsOutputReference
 ```
