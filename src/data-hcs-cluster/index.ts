@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcs/d/cluster
+// https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataHcsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the cluster Managed Resource. If not specified, it is defaulted to the value of `managed_application_name`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#cluster_name DataHcsCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#cluster_name DataHcsCluster#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#id DataHcsCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#id DataHcsCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,30 +23,30 @@ export interface DataHcsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the HCS Azure Managed Application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#managed_application_name DataHcsCluster#managed_application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#managed_application_name DataHcsCluster#managed_application_name}
   */
   readonly managedApplicationName: string;
   /**
   * The name of the Resource Group in which the HCS Azure Managed Application belongs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#resource_group_name DataHcsCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#resource_group_name DataHcsCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#timeouts DataHcsCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#timeouts DataHcsCluster#timeouts}
   */
   readonly timeouts?: DataHcsClusterTimeouts;
 }
 export interface DataHcsClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/cluster#default DataHcsCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#default DataHcsCluster#default}
   */
   readonly default?: string;
 }
 
-export function dataHcsClusterTimeoutsToTerraform(struct?: DataHcsClusterTimeoutsOutputReference | DataHcsClusterTimeouts | cdktf.IResolvable): any {
+export function dataHcsClusterTimeoutsToTerraform(struct?: DataHcsClusterTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +65,7 @@ export class DataHcsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcsClusterTimeouts | cdktf.IResolvable | undefined {
@@ -116,7 +116,7 @@ export class DataHcsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcs/d/cluster hcs_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster hcs_cluster}
 */
 export class DataHcsCluster extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataHcsCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcs/d/cluster hcs_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster hcs_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

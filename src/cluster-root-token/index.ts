@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcs/r/cluster_root_token
+// https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterRootTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token#id ClusterRootToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token#id ClusterRootToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,30 +17,30 @@ export interface ClusterRootTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the HCS Azure Managed Application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token#managed_application_name ClusterRootToken#managed_application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token#managed_application_name ClusterRootToken#managed_application_name}
   */
   readonly managedApplicationName: string;
   /**
   * The name of the Resource Group in which the HCS Azure Managed Application belongs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token#resource_group_name ClusterRootToken#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token#resource_group_name ClusterRootToken#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token#timeouts ClusterRootToken#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token#timeouts ClusterRootToken#timeouts}
   */
   readonly timeouts?: ClusterRootTokenTimeouts;
 }
 export interface ClusterRootTokenTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token#default ClusterRootToken#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token#default ClusterRootToken#default}
   */
   readonly default?: string;
 }
 
-export function clusterRootTokenTimeoutsToTerraform(struct?: ClusterRootTokenTimeoutsOutputReference | ClusterRootTokenTimeouts | cdktf.IResolvable): any {
+export function clusterRootTokenTimeoutsToTerraform(struct?: ClusterRootTokenTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -59,7 +59,7 @@ export class ClusterRootTokenTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): ClusterRootTokenTimeouts | cdktf.IResolvable | undefined {
@@ -110,7 +110,7 @@ export class ClusterRootTokenTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token hcs_cluster_root_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token hcs_cluster_root_token}
 */
 export class ClusterRootToken extends cdktf.TerraformResource {
 
@@ -124,7 +124,7 @@ export class ClusterRootToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcs/r/cluster_root_token hcs_cluster_root_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster_root_token hcs_cluster_root_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

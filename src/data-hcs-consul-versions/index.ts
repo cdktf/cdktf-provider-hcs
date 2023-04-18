@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcs/d/consul_versions
+// https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataHcsConsulVersionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/consul_versions#id DataHcsConsulVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions#id DataHcsConsulVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,18 +17,18 @@ export interface DataHcsConsulVersionsConfig extends cdktf.TerraformMetaArgument
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/consul_versions#timeouts DataHcsConsulVersions#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions#timeouts DataHcsConsulVersions#timeouts}
   */
   readonly timeouts?: DataHcsConsulVersionsTimeouts;
 }
 export interface DataHcsConsulVersionsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/consul_versions#default DataHcsConsulVersions#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions#default DataHcsConsulVersions#default}
   */
   readonly default?: string;
 }
 
-export function dataHcsConsulVersionsTimeoutsToTerraform(struct?: DataHcsConsulVersionsTimeoutsOutputReference | DataHcsConsulVersionsTimeouts | cdktf.IResolvable): any {
+export function dataHcsConsulVersionsTimeoutsToTerraform(struct?: DataHcsConsulVersionsTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -47,7 +47,7 @@ export class DataHcsConsulVersionsTimeoutsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcsConsulVersionsTimeouts | cdktf.IResolvable | undefined {
@@ -98,7 +98,7 @@ export class DataHcsConsulVersionsTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcs/d/consul_versions hcs_consul_versions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions hcs_consul_versions}
 */
 export class DataHcsConsulVersions extends cdktf.TerraformDataSource {
 
@@ -112,7 +112,7 @@ export class DataHcsConsulVersions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcs/d/consul_versions hcs_consul_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions hcs_consul_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

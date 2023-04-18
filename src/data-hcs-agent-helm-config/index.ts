@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcs/d/agent_helm_config
+// https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface DataHcsAgentHelmConfigConfig extends cdktf.TerraformMetaArgumen
   /**
   * The name of the AKS cluster that will consume the Helm config.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#aks_cluster_name DataHcsAgentHelmConfig#aks_cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#aks_cluster_name DataHcsAgentHelmConfig#aks_cluster_name}
   */
   readonly aksClusterName: string;
   /**
   * The resource group name of the AKS cluster that will consume the Helm config. If not specified, it is defaulted to the value of `resource_group_name`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#aks_resource_group DataHcsAgentHelmConfig#aks_resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#aks_resource_group DataHcsAgentHelmConfig#aks_resource_group}
   */
   readonly aksResourceGroup?: string;
   /**
   * Denotes that the gossip ports should be exposed. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#expose_gossip_ports DataHcsAgentHelmConfig#expose_gossip_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#expose_gossip_ports DataHcsAgentHelmConfig#expose_gossip_ports}
   */
   readonly exposeGossipPorts?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#id DataHcsAgentHelmConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#id DataHcsAgentHelmConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,30 +35,30 @@ export interface DataHcsAgentHelmConfigConfig extends cdktf.TerraformMetaArgumen
   /**
   * The name of the HCS Azure Managed Application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#managed_application_name DataHcsAgentHelmConfig#managed_application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#managed_application_name DataHcsAgentHelmConfig#managed_application_name}
   */
   readonly managedApplicationName: string;
   /**
   * The name of the Resource Group in which the HCS Azure Managed Application belongs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#resource_group_name DataHcsAgentHelmConfig#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#resource_group_name DataHcsAgentHelmConfig#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#timeouts DataHcsAgentHelmConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#timeouts DataHcsAgentHelmConfig#timeouts}
   */
   readonly timeouts?: DataHcsAgentHelmConfigTimeouts;
 }
 export interface DataHcsAgentHelmConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config#default DataHcsAgentHelmConfig#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config#default DataHcsAgentHelmConfig#default}
   */
   readonly default?: string;
 }
 
-export function dataHcsAgentHelmConfigTimeoutsToTerraform(struct?: DataHcsAgentHelmConfigTimeoutsOutputReference | DataHcsAgentHelmConfigTimeouts | cdktf.IResolvable): any {
+export function dataHcsAgentHelmConfigTimeoutsToTerraform(struct?: DataHcsAgentHelmConfigTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +77,7 @@ export class DataHcsAgentHelmConfigTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcsAgentHelmConfigTimeouts | cdktf.IResolvable | undefined {
@@ -128,7 +128,7 @@ export class DataHcsAgentHelmConfigTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config hcs_agent_helm_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config hcs_agent_helm_config}
 */
 export class DataHcsAgentHelmConfig extends cdktf.TerraformDataSource {
 
@@ -142,7 +142,7 @@ export class DataHcsAgentHelmConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcs/d/agent_helm_config hcs_agent_helm_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/agent_helm_config hcs_agent_helm_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

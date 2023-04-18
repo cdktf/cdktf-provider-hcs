@@ -1,6 +1,6 @@
 # `hcs_cluster`
 
-Refer to the Terraform Registory for docs: [`hcs_cluster`](https://www.terraform.io/docs/providers/hcs/r/cluster).
+Refer to the Terraform Registory for docs: [`hcs_cluster`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster).
 
 # `cluster` Submodule <a name="`cluster` Submodule" id="@cdktf/provider-hcs.cluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcs_cluster`](https://www.terraform
 
 ### Cluster <a name="Cluster" id="@cdktf/provider-hcs.cluster.Cluster"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/hcs/r/cluster hcs_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster hcs_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.cluster.Cluster.Initializer"></a>
 
@@ -450,7 +450,7 @@ cluster.Cluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -601,10 +601,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcs.cluster.Cluster.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1263,7 +1263,7 @@ const clusterConfig: cluster.ClusterConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1279,7 +1279,7 @@ const clusterConfig: cluster.ClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.consulDatacenter">consulDatacenter</a></code> | <code>string</code> | The Consul data center name of the cluster. If not specified, it is defaulted to the value of `managed_application_name`. |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.consulExternalEndpoint">consulExternalEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | Denotes that the cluster has an external endpoint for the Consul UI. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.consulFederationToken">consulFederationToken</a></code> | <code>string</code> | The token used to join a federation of Consul clusters. |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#id Cluster#id}. |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#id Cluster#id}. |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.location">location</a></code> | <code>string</code> | The Azure region that the cluster is deployed to. |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.managedResourceGroupName">managedResourceGroupName</a></code> | <code>string</code> | The name of the Managed Resource Group in which the cluster resources belong. |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterConfig.property.minConsulVersion">minConsulVersion</a></code> | <code>string</code> | The minimum Consul version of the cluster. |
@@ -1303,10 +1303,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcs.cluster.ClusterConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1372,7 +1372,7 @@ The mode of the cluster ('Development' or 'Production').
 
 Development clusters only have a single Consul server. Production clusters are fully supported, full featured, and deploy with a minimum of three hosts.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#cluster_mode Cluster#cluster_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#cluster_mode Cluster#cluster_mode}
 
 ---
 
@@ -1386,7 +1386,7 @@ public readonly email: string;
 
 The contact email for the primary owner of the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#email Cluster#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#email Cluster#email}
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly managedApplicationName: string;
 
 The name of the HCS Azure Managed Application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#managed_application_name Cluster#managed_application_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#managed_application_name Cluster#managed_application_name}
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly resourceGroupName: string;
 
 The name of the Resource Group in which the HCS Azure Managed Application belongs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#resource_group_name Cluster#resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#resource_group_name Cluster#resource_group_name}
 
 ---
 
@@ -1428,7 +1428,7 @@ public readonly auditLoggingEnabled: boolean | IResolvable;
 
 Enables Consul audit logging for the cluster resource. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#audit_logging_enabled Cluster#audit_logging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#audit_logging_enabled Cluster#audit_logging_enabled}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly auditLogStorageContainerUrl: string;
 
 The url of the Azure blob storage container to write audit logs to if `audit_logging_enabled` is `true`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#audit_log_storage_container_url Cluster#audit_log_storage_container_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#audit_log_storage_container_url Cluster#audit_log_storage_container_url}
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly clusterName: string;
 
 The name of the cluster Managed Resource. If not specified, it is defaulted to the value of `managed_application_name`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#cluster_name Cluster#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#cluster_name Cluster#cluster_name}
 
 ---
 
@@ -1470,7 +1470,7 @@ public readonly consulDatacenter: string;
 
 The Consul data center name of the cluster. If not specified, it is defaulted to the value of `managed_application_name`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#consul_datacenter Cluster#consul_datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#consul_datacenter Cluster#consul_datacenter}
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly consulExternalEndpoint: boolean | IResolvable;
 
 Denotes that the cluster has an external endpoint for the Consul UI. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#consul_external_endpoint Cluster#consul_external_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#consul_external_endpoint Cluster#consul_external_endpoint}
 
 ---
 
@@ -1500,7 +1500,7 @@ The token used to join a federation of Consul clusters.
 
 If the cluster is not part of a federation, this field will be empty.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#consul_federation_token Cluster#consul_federation_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#consul_federation_token Cluster#consul_federation_token}
 
 ---
 
@@ -1512,7 +1512,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#id Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#id Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1531,7 +1531,7 @@ The Azure region that the cluster is deployed to.
 
 If not specified, it is defaulted to the region of the Resource Group the Managed Application belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#location Cluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#location Cluster#location}
 
 ---
 
@@ -1547,7 +1547,7 @@ The name of the Managed Resource Group in which the cluster resources belong.
 
 If not specified, it is defaulted to the value of `managed_application_name` with 'mrg-' prepended.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#managed_resource_group_name Cluster#managed_resource_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#managed_resource_group_name Cluster#managed_resource_group_name}
 
 ---
 
@@ -1563,7 +1563,7 @@ The minimum Consul version of the cluster.
 
 If not specified, it is defaulted to the version that is currently recommended by HCS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#min_consul_version Cluster#min_consul_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#min_consul_version Cluster#min_consul_version}
 
 ---
 
@@ -1579,7 +1579,7 @@ The name of the Azure Marketplace HCS plan for the cluster.
 
 If not specified, it will default to the current HCS default plan (see the `hcs_plan_defaults` data source).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#plan_name Cluster#plan_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#plan_name Cluster#plan_name}
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly tags: {[ key: string ]: string};
 
 A mapping of tags to assign to the HCS Azure Managed Application resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#tags Cluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#tags Cluster#tags}
 
 ---
 
@@ -1607,7 +1607,7 @@ public readonly timeouts: ClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#timeouts Cluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#timeouts Cluster#timeouts}
 
 ---
 
@@ -1621,7 +1621,7 @@ public readonly vnetCidr: string;
 
 The VNET CIDR range of the Consul cluster. Defaults to `172.25.16.0/24`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#vnet_cidr Cluster#vnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#vnet_cidr Cluster#vnet_cidr}
 
 ---
 
@@ -1639,10 +1639,10 @@ const clusterTimeouts: cluster.ClusterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#create Cluster#create}. |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#default Cluster#default}. |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#delete Cluster#delete}. |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#update Cluster#update}. |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#create Cluster#create}. |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#default Cluster#default}. |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#delete Cluster#delete}. |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#update Cluster#update}. |
 
 ---
 
@@ -1654,7 +1654,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#create Cluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#create Cluster#create}.
 
 ---
 
@@ -1666,7 +1666,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#default Cluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#default Cluster#default}.
 
 ---
 
@@ -1678,7 +1678,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#delete Cluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#delete Cluster#delete}.
 
 ---
 
@@ -1690,7 +1690,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/cluster#update Cluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/cluster#update Cluster#update}.
 
 ---
 

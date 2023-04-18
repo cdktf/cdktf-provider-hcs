@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcs/r/snapshot
+// https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#id Snapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#id Snapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,48 +17,48 @@ export interface SnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the HCS Azure Managed Application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#managed_application_name Snapshot#managed_application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#managed_application_name Snapshot#managed_application_name}
   */
   readonly managedApplicationName: string;
   /**
   * The name of the Resource Group in which the HCS Azure Managed Application belongs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#resource_group_name Snapshot#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#resource_group_name Snapshot#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * The name of the snapshot.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#snapshot_name Snapshot#snapshot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#snapshot_name Snapshot#snapshot_name}
   */
   readonly snapshotName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#timeouts Snapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#timeouts Snapshot#timeouts}
   */
   readonly timeouts?: SnapshotTimeouts;
 }
 export interface SnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#create Snapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#create Snapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#default Snapshot#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#default Snapshot#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#delete Snapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#delete Snapshot#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs/r/snapshot#update Snapshot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot#update Snapshot#update}
   */
   readonly update?: string;
 }
 
-export function snapshotTimeoutsToTerraform(struct?: SnapshotTimeoutsOutputReference | SnapshotTimeouts | cdktf.IResolvable): any {
+export function snapshotTimeoutsToTerraform(struct?: SnapshotTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,7 +80,7 @@ export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): SnapshotTimeouts | cdktf.IResolvable | undefined {
@@ -197,7 +197,7 @@ export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcs/r/snapshot hcs_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot hcs_snapshot}
 */
 export class Snapshot extends cdktf.TerraformResource {
 
@@ -211,7 +211,7 @@ export class Snapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcs/r/snapshot hcs_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot hcs_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

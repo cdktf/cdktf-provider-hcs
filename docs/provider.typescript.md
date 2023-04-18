@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`hcs`](https://www.terraform.io/docs/providers/hcs).
+Refer to the Terraform Registory for docs: [`hcs`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcs.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcs`](https://www.terraform.io/docs
 
 ### HcsProvider <a name="HcsProvider" id="@cdktf/provider-hcs.provider.HcsProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/hcs hcs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs hcs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.provider.HcsProvider.Initializer"></a>
 
@@ -731,7 +731,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#alias HcsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#alias HcsProvider#alias}
 
 ---
 
@@ -747,7 +747,7 @@ The password associated with the Azure Client Certificate.
 
 For use when authenticating as a Service Principal using a Client Certificate
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_client_certificate_password HcsProvider#azure_client_certificate_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_client_certificate_password HcsProvider#azure_client_certificate_password}
 
 ---
 
@@ -761,7 +761,7 @@ public readonly azureClientCertificatePath: string;
 
 The path to the Azure Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_client_certificate_path HcsProvider#azure_client_certificate_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_client_certificate_path HcsProvider#azure_client_certificate_path}
 
 ---
 
@@ -775,7 +775,7 @@ public readonly azureClientId: string;
 
 The Azure Client ID which should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_client_id HcsProvider#azure_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_client_id HcsProvider#azure_client_id}
 
 ---
 
@@ -791,7 +791,7 @@ The Azure Client Secret which should be used.
 
 For use when authenticating as a Service Principal using a Client Secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_client_secret HcsProvider#azure_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_client_secret HcsProvider#azure_client_secret}
 
 ---
 
@@ -805,7 +805,7 @@ public readonly azureEnvironment: string;
 
 The Azure Cloud Environment which should be used. Possible values are public, usgovernment, german, and china. Defaults to public.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_environment HcsProvider#azure_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_environment HcsProvider#azure_environment}
 
 ---
 
@@ -819,7 +819,7 @@ public readonly azureMetadataHost: string;
 
 The hostname which should be used for the Azure Metadata Service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_metadata_host HcsProvider#azure_metadata_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_metadata_host HcsProvider#azure_metadata_host}
 
 ---
 
@@ -833,7 +833,7 @@ public readonly azureMsiEndpoint: string;
 
 The path to a custom endpoint for Azure Managed Service Identity - in most circumstances this should be detected automatically.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_msi_endpoint HcsProvider#azure_msi_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_msi_endpoint HcsProvider#azure_msi_endpoint}
 
 ---
 
@@ -847,7 +847,7 @@ public readonly azureSubscriptionId: string;
 
 The Azure Subscription ID which should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_subscription_id HcsProvider#azure_subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_subscription_id HcsProvider#azure_subscription_id}
 
 ---
 
@@ -861,7 +861,7 @@ public readonly azureTenantId: string;
 
 The Azure Tenant ID which should be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_tenant_id HcsProvider#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_tenant_id HcsProvider#azure_tenant_id}
 
 ---
 
@@ -875,7 +875,7 @@ public readonly azureUseMsi: boolean | IResolvable;
 
 Allowed Azure Managed Service Identity be used for Authentication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#azure_use_msi HcsProvider#azure_use_msi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#azure_use_msi HcsProvider#azure_use_msi}
 
 ---
 
@@ -889,7 +889,7 @@ public readonly hcpApiDomain: string;
 
 The HashiCorp Cloud Platform API domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#hcp_api_domain HcsProvider#hcp_api_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#hcp_api_domain HcsProvider#hcp_api_domain}
 
 ---
 
@@ -903,7 +903,7 @@ public readonly hcsMarketplaceProductName: string;
 
 The HashiCorp Consul Service product name on the Azure marketplace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcs#hcs_marketplace_product_name HcsProvider#hcs_marketplace_product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs#hcs_marketplace_product_name HcsProvider#hcs_marketplace_product_name}
 
 ---
 
