@@ -1,3 +1,7 @@
+# `hcs_snapshot`
+
+Refer to the Terraform Registory for docs: [`hcs_snapshot`](https://www.terraform.io/docs/providers/hcs/r/snapshot).
+
 # `snapshot` Submodule <a name="`snapshot` Submodule" id="@cdktf/provider-hcs.snapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_hcs_plan_defaults`
+
+Refer to the Terraform Registory for docs: [`data_hcs_plan_defaults`](https://www.terraform.io/docs/providers/hcs/d/plan_defaults).
+
 # `dataHcsPlanDefaults` Submodule <a name="`dataHcsPlanDefaults` Submodule" id="@cdktf/provider-hcs.dataHcsPlanDefaults"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

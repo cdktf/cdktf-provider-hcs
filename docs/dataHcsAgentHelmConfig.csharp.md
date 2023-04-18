@@ -1,3 +1,7 @@
+# `data_hcs_agent_helm_config`
+
+Refer to the Terraform Registory for docs: [`data_hcs_agent_helm_config`](https://www.terraform.io/docs/providers/hcs/d/agent_helm_config).
+
 # `dataHcsAgentHelmConfig` Submodule <a name="`dataHcsAgentHelmConfig` Submodule" id="@cdktf/provider-hcs.dataHcsAgentHelmConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
