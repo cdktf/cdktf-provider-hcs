@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 datahcsconsulversions.NewDataHcsConsulVersions(scope Construct, id *string, config DataHcsConsulVersionsConfig) DataHcsConsulVersions
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 datahcsconsulversions.DataHcsConsulVersions_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 datahcsconsulversions.DataHcsConsulVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datahcsconsulversions.DataHcsConsulVersions_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 datahcsconsulversions.DataHcsConsulVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 &datahcsconsulversions.DataHcsConsulVersionsConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v4.dataHcsConsulVersions.DataHcsConsulVersionsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs.dataHcsConsulVersions.DataHcsConsulVersionsTimeouts,
 }
 ```
 
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 &datahcsconsulversions.DataHcsConsulVersionsTimeouts {
 	Default: *string,
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsConsulVersions.DataHcsConsulVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v4/datahcsconsulversions"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsconsulversions"
 
 datahcsconsulversions.NewDataHcsConsulVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsConsulVersionsTimeoutsOutputReference
 ```
