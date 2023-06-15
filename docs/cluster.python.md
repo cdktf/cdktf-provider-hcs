@@ -837,7 +837,7 @@ cluster.Cluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.planNameInput">plan_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.vnetCidrInput">vnet_cidr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.auditLoggingEnabled">audit_logging_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.Cluster.property.auditLogStorageContainerUrl">audit_log_storage_container_url</a></code> | <code>str</code> | *No description.* |
@@ -1384,10 +1384,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-hcs.cluster.Cluster.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ClusterTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>]
 
 ---
 
@@ -2341,7 +2341,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2452,10 +2452,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcs.cluster.ClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ClusterTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcs.cluster.ClusterTimeouts">ClusterTimeouts</a>]
 
 ---
 
