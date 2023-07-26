@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataHcsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the cluster Managed Resource. If not specified, it is defaulted to the value of `managed_application_name`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#cluster_name DataHcsCluster#cluster_name}
   */
   readonly clusterName?: string;
@@ -27,19 +22,19 @@ export interface DataHcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the HCS Azure Managed Application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#managed_application_name DataHcsCluster#managed_application_name}
   */
   readonly managedApplicationName: string;
   /**
   * The name of the Resource Group in which the HCS Azure Managed Application belongs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#resource_group_name DataHcsCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster#timeouts DataHcsCluster#timeouts}
   */
   readonly timeouts?: DataHcsClusterTimeouts;
