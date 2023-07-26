@@ -21,7 +21,7 @@ export interface DataHcsPlanDefaultsConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/plan_defaults#timeouts DataHcsPlanDefaults#timeouts}
   */
   readonly timeouts?: DataHcsPlanDefaultsTimeouts;

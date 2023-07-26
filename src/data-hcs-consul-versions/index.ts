@@ -21,7 +21,7 @@ export interface DataHcsConsulVersionsConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions#timeouts DataHcsConsulVersions#timeouts}
   */
   readonly timeouts?: DataHcsConsulVersionsTimeouts;
