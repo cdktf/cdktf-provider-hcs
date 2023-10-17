@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.provider.HcsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 provider.NewHcsProvider(scope Construct, id *string, config HcsProviderConfig) HcsProvider
 ```
@@ -232,7 +232,7 @@ func ResetHcsMarketplaceProductName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.provider.HcsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 provider.HcsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -264,7 +264,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.provider.HcsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 provider.HcsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -278,7 +278,7 @@ provider.HcsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-hcs.provider.HcsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 provider.HcsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -292,7 +292,7 @@ provider.HcsProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcs.provider.HcsProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 provider.HcsProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.provider.HcsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/provider"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/provider"
 
 &provider.HcsProviderConfig {
 	Alias: *string,
