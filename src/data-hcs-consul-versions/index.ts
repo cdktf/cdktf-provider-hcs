@@ -112,6 +112,20 @@ export class DataHcsConsulVersions extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "hcs_consul_versions";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataHcsConsulVersions resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataHcsConsulVersions to import
+  * @param importFromId The id of the existing DataHcsConsulVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/consul_versions#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataHcsConsulVersions to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcs_consul_versions", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

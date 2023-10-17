@@ -124,6 +124,20 @@ export class DataHcsFederationToken extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "hcs_federation_token";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataHcsFederationToken resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataHcsFederationToken to import
+  * @param importFromId The id of the existing DataHcsFederationToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/federation_token#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataHcsFederationToken to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcs_federation_token", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
