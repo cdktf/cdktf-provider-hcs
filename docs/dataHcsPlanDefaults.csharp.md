@@ -291,6 +291,7 @@ private void ResetTimeouts()
 | <code><a href="#@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataHcsPlanDefaults resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -351,6 +352,50 @@ DataHcsPlanDefaults.IsTerraformDataSource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Hcs;
+
+DataHcsPlanDefaults.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataHcsPlanDefaults resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataHcsPlanDefaults to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataHcsPlanDefaults that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/plan_defaults#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataHcsPlanDefaults to import is found.
 
 ---
 
