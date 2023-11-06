@@ -1,7 +1,9 @@
 
-# Terraform CDK hcs Provider ~> 0.5
+# Terraform CDK hcs Provider tracks ~> 0.5
 
 This repo builds and publishes the Terraform hcs Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on hcs 0.5.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform hcs Provider version 1:1. 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform hcs Provider](https://registry.terraform.io/providers/hashicorp/hcs/0.5.0)
+- [Terraform hcs Provider](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-hcs/releases)
 - [Terraform Engine](https://terraform.io)
 
