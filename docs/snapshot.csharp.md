@@ -1,7 +1,3 @@
-# `hcs_snapshot`
-
-Refer to the Terraform Registory for docs: [`hcs_snapshot`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/resources/snapshot).
-
 # `snapshot` Submodule <a name="`snapshot` Submodule" id="@cdktf/provider-hcs.snapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
