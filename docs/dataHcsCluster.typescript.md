@@ -1,7 +1,3 @@
-# `data_hcs_cluster`
-
-Refer to the Terraform Registory for docs: [`data_hcs_cluster`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/cluster).
-
 # `dataHcsCluster` Submodule <a name="`dataHcsCluster` Submodule" id="@cdktf/provider-hcs.dataHcsCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

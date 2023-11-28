@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`hcs`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcs.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

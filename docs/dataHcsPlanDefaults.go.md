@@ -1,7 +1,3 @@
-# `data_hcs_plan_defaults`
-
-Refer to the Terraform Registory for docs: [`data_hcs_plan_defaults`](https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs/data-sources/plan_defaults).
-
 # `dataHcsPlanDefaults` Submodule <a name="`dataHcsPlanDefaults` Submodule" id="@cdktf/provider-hcs.dataHcsPlanDefaults"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.NewDataHcsPlanDefaults(scope Construct, id *string, config DataHcsPlanDefaultsConfig) DataHcsPlanDefaults
 ```
@@ -298,7 +294,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.DataHcsPlanDefaults_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.DataHcsPlanDefaults_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +340,7 @@ datahcsplandefaults.DataHcsPlanDefaults_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.DataHcsPlanDefaults_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +354,7 @@ datahcsplandefaults.DataHcsPlanDefaults_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaults.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.DataHcsPlanDefaults_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaultsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 &datahcsplandefaults.DataHcsPlanDefaultsConfig {
 	Connection: interface{},
@@ -664,7 +660,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v7.dataHcsPlanDefaults.DataHcsPlanDefaultsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs.dataHcsPlanDefaults.DataHcsPlanDefaultsTimeouts,
 }
 ```
 
@@ -788,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaultsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 &datahcsplandefaults.DataHcsPlanDefaultsTimeouts {
 	Default: *string,
@@ -822,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsPlanDefaults.DataHcsPlanDefaultsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsplandefaults"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsplandefaults"
 
 datahcsplandefaults.NewDataHcsPlanDefaultsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsPlanDefaultsTimeoutsOutputReference
 ```
