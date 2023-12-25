@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [cluster](./cluster.typescript.md)
 - [clusterRootToken](./clusterRootToken.typescript.md)
 - [dataHcsAgentHelmConfig](./dataHcsAgentHelmConfig.typescript.md)
@@ -11,3 +14,8 @@ The following submodules are available:
 - [dataHcsPlanDefaults](./dataHcsPlanDefaults.typescript.md)
 - [provider](./provider.typescript.md)
 - [snapshot](./snapshot.typescript.md)
+
+
+
+
+
