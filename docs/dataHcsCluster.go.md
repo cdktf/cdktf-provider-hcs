@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.NewDataHcsCluster(scope Construct, id *string, config DataHcsClusterConfig) DataHcsCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.toMetadata"></a>
 
@@ -301,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.DataHcsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.DataHcsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +356,7 @@ datahcscluster.DataHcsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.DataHcsCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +370,7 @@ datahcscluster.DataHcsCluster_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.DataHcsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 &datahcscluster.DataHcsClusterConfig {
 	Connection: interface{},
@@ -1000,7 +1009,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
 	ResourceGroupName: *string,
 	ClusterName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v7.dataHcsCluster.DataHcsClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v8.dataHcsCluster.DataHcsClusterTimeouts,
 }
 ```
 
@@ -1169,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 &datahcscluster.DataHcsClusterTimeouts {
 	Default: *string,
@@ -1203,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsCluster.DataHcsClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcscluster"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v8/datahcscluster"
 
 datahcscluster.NewDataHcsClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsClusterTimeoutsOutputReference
 ```
