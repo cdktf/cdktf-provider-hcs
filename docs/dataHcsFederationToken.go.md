@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.NewDataHcsFederationToken(scope Construct, id *string, config DataHcsFederationTokenConfig) DataHcsFederationToken
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.toMetadata"></a>
 
@@ -294,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +349,7 @@ datahcsfederationtoken.DataHcsFederationToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +363,7 @@ datahcsfederationtoken.DataHcsFederationToken_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.DataHcsFederationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 &datahcsfederationtoken.DataHcsFederationTokenConfig {
 	Connection: interface{},
@@ -673,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
 	ManagedApplicationName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs/v7.dataHcsFederationToken.DataHcsFederationTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcs-go/hcs.dataHcsFederationToken.DataHcsFederationTokenTimeouts,
 }
 ```
 
@@ -827,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 &datahcsfederationtoken.DataHcsFederationTokenTimeouts {
 	Default: *string,
@@ -861,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcs.dataHcsFederationToken.DataHcsFederationTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcs-go/hcs/v7/datahcsfederationtoken"
+import "github.com/cdktf/cdktf-provider-hcs-go/hcs/datahcsfederationtoken"
 
 datahcsfederationtoken.NewDataHcsFederationTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcsFederationTokenTimeoutsOutputReference
 ```

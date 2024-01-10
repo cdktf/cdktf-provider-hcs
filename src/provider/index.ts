@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcs/0.5.1/docs
 // generated from terraform resource schema
 
@@ -384,5 +379,91 @@ export class HcsProvider extends cdktf.TerraformProvider {
       hcs_marketplace_product_name: cdktf.stringToTerraform(this._hcsMarketplaceProductName),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      azure_client_certificate_password: {
+        value: cdktf.stringToHclTerraform(this._azureClientCertificatePassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_client_certificate_path: {
+        value: cdktf.stringToHclTerraform(this._azureClientCertificatePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_client_id: {
+        value: cdktf.stringToHclTerraform(this._azureClientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_client_secret: {
+        value: cdktf.stringToHclTerraform(this._azureClientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_environment: {
+        value: cdktf.stringToHclTerraform(this._azureEnvironment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_metadata_host: {
+        value: cdktf.stringToHclTerraform(this._azureMetadataHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_msi_endpoint: {
+        value: cdktf.stringToHclTerraform(this._azureMsiEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_subscription_id: {
+        value: cdktf.stringToHclTerraform(this._azureSubscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_tenant_id: {
+        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_use_msi: {
+        value: cdktf.booleanToHclTerraform(this._azureUseMsi),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hcp_api_domain: {
+        value: cdktf.stringToHclTerraform(this._hcpApiDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hcs_marketplace_product_name: {
+        value: cdktf.stringToHclTerraform(this._hcsMarketplaceProductName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
